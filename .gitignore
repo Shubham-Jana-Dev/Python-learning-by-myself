@@ -18,5 +18,6 @@ rad.json
 *.g.xlf
 #License-file
 *.flf
+tt.py
 #Test results file
 TestResults.xml
