@@ -39,3 +39,17 @@ for i in range(len(nums)):
         print(f)
 # Calculate the sum of nums[i] and nums[j]
 # Print it
+my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+low = 0
+high = len(my_list)-1
+t = 80
+while  low <= high:
+        mid = (low + high)//2
+        if my_list[mid] == t:
+            print("the terget is in the index no: ",mid)
+            break 
+        elif my_list[mid] < t:
+            low = mid + 1
+        else:
+            high = mid - 1
+            
