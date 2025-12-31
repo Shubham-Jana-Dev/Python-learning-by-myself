@@ -38,6 +38,7 @@ for ind, i in enumerate(my_list):
     if (i == t):
         print(f"at index number,{ind} we can find",t)
 """
+"""
 prices = [10, 20, 30, 40, 50]
 t = 70
 for i in range(len(prices)):
@@ -45,9 +46,65 @@ for i in range(len(prices)):
         if prices[i] + prices[j] == t:
             print(f"the items prices would be {i} and {j}.")
 
-
-
-
+"""
+# Print numbers from 1 to 100
+'''
+for i  in range (1,101):
+    print (i)
+'''
+'''
+# print numbers from 100 to 1
+for i in range (100,0,-1):
+    print (i)
+'''
+# The same problem using while Loop
+'''
+I = 100
+while I >= 1 :
+    print (I)
+    I-= 1
+'''
+# Only print even numbers 
+'''
+i = 100
+while i>=1:
+    if(i%2==0):
+       print (i)
+    i -=1
+'''
+# without if-elif-else 
+'''
+i = 100
+while i>=1:
+    print (i)
+    i -=2
+'''
+# for odd numbers
+'''
+i=99
+while i>=1:
+    print (i)
+    i-=2
+ '''
+ # the numbers those are only divisible by 5
+''' 
+i=100
+while i>=1:
+     print (i)
+     i-=5
+'''
+# take the Input from the user of the starting value and using the range() function 
+'''
+i=int(input("Enter the number:- "))
+for i in range(i,0,-5):
+    print(i)
+'''
+"""
+i=int(input("Enter the number:-"))
+while i>=1:
+    print (i)
+    i-=5
+"""
 
 
 
