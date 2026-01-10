@@ -156,6 +156,7 @@ class Solution(object):
 # 5. finaly return the next part of the dummy
         return dummy.next
 '''
+"""
 print(121 // 10)
 # palindroms numbers
 x = 121
@@ -167,10 +168,32 @@ while  x > 0:
     x = x // 10
 if original == reversed_num:
     print("This is a palinrom number")
+"""
+#66. plus one
+'''
+my_list = [1,5,3,5,7]
+for i in range(len(my_list) - 1, -1, -1):
+    if my_list[i] < 9:
+        my_list[i] = my_list[i]+1
+    else:
+        my_list[i] = 0
+        my_list[i] = my_list[i-1]+1
+'''
+#26.
 
-
-
-
+class Solution(object):
+    def removeDuplicates(self, nums):
+        if not nums:
+            return 0
+        
+        write_index = 1 
+        
+        for i in range(1, len(nums)):
+            if nums[i] != nums[i-1]:
+                nums[write_index] = nums[i]
+                write_index += 1
+                
+        return write_index
 
 
 
