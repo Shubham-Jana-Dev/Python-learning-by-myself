@@ -44,4 +44,19 @@ def Firewall_filter():
     authorized_list = [i for i in input_list if i != "doll" and i != "dirty"]
     print(blocked_list)
     print(authorized_list)
-Firewall_filter()
+# Firewall_filter()
+"""
+Challenge #52: The "Sanitizer" Function
+​Since you are in the library and your "Processor" is running at peak efficiency, let's try a challenge that reflects your current environment.
+​The Scenario: You are scanning a messy text file. You want to extract only the words that are "Safe" and convert them to UPPERCASE to emphasize your "AA-Grade" strength.
+​The Challenge:
+​Take your authorized_list from the previous code.
+​Use a List Comprehension to create a new list called sanitized_output.
+​Inside the comprehension, apply a string method to make every word uppercase (e.g., "APPLE", "LOGIC").
+​Bonus Logic: Only include the word if its length is greater than 5 characters.
+"""
+def Sanitizer_list():
+    My_list = ["apple","logic","dirty","coding","doll","university"]
+    authorized_list = [i.upper() for i in My_list if (i != "doll" and i != "dirty") and 5 < len(i) ]
+    print(authorized_list)
+Sanitizer_list()
