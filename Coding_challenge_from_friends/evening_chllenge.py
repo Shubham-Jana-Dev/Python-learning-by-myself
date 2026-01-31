@@ -59,4 +59,36 @@ def Sanitizer_list():
     My_list = ["apple","logic","dirty","coding","doll","university"]
     authorized_list = [i.upper() for i in My_list if (i != "doll" and i != "dirty") and 5 < len(i) ]
     print(authorized_list)
-Sanitizer_list()
+# Sanitizer_list()
+"""
+The Challenge:
+​Create a list: logs = ["Success", "Success", "Warning", "Success", "Critical_Error", "Warning", "Success"]
+​Use the .count() method to find how many "Success" logs there are.
+​Advanced Logic: Create a Dictionary called system_report where the keys are the log types and the values are their counts.
+"""
+def count_string():
+    logs = ["Success", "Success", "Warning", "Success", "Critical_Error", "Warning", "Success"]
+    system_report  = {i:logs.count(i) for i in set(logs) if i == "Success" }
+    print(system_report)
+# count_string()
+"""
+Challenge #54: The "Final Security Audit"
+​Let's combine everything. This is the last challenge for the library session.
+​The Task:
+​Create a dictionary called user_permissions.
+​Keys: "Shubham", "Mamma", "Neha".
+​Values: Give yourself "Admin", and give the others "Guest".
+​Write a function that takes a name as input.
+​If the name is "Shubham", print "Access Granted: Apple Scent Detected."
+​If the name is anyone else, print "Access Denied: Restricted Zone."
+"""
+def Access():
+    user_permissions = {"Shubham","Mamma","Neha"}
+    Admin = {i for i in user_permissions if i == "Shubham"}
+    Guest = {i for i in user_permissions if i not in Admin}
+    User = input("Enter your Identity: ")
+    if User in Admin:
+        print("Access Granted: Apple Scent Detected.")
+    else:
+        print("Access Denied: Restricted Zone.")
+Access()
