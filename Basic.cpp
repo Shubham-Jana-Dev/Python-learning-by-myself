@@ -50,7 +50,7 @@ int main(){
 #include<iostream>
 #include<cmath>
 using namespace std;
-int fact(int num){
+int fact(int num){    // function 1
     if (num == 0 or num == 1){
         return 1;
     }
@@ -66,7 +66,7 @@ There are 3 types of loops
 2. while loops
 3. Do-while loops
 */
-int ForLoop(int num){
+int ForLoop(int num){    // function 2
     if (num == 0 or num == 1){
         return 1;
     }
@@ -77,12 +77,26 @@ int ForLoop(int num){
     return fact;
 }
 int main(){
-// int result = fact(5);
+// int result = fact(5);  // function 1
 // cout << result;
-int num;
-cout << "Enter the number: ";
-cin >> num;
-int result = ForLoop(num);
-cout << result<< endl;
+// int num;
+// cout << "Enter the number: ";
+// cin >> num;
+// int result = ForLoop(num);    // function 2
+// cout << result<< endl;
+float num1 = 45.73; // by default c++ treats this as a double
+float num2 = 45.73f; // we use f for tell the compiler that it's a floating point value
+long double num3 = 45.73l; // we use l for tell the compiler that it's a long double.
+// cout << sizeof(num1) << endl;
+// cout << sizeof(num2) << endl;
+// cout << sizeof(num3) << endl;
+//*************Reference Variables*************
+float div = 234.89;
+float & mil = div;
+//cout <<"div = " << div << endl;
+//cout <<"mil = " << mil << endl;
+//*************Typecasting*************
+cout << "The value of div is "<<div<<endl;
+cout << "The integer value of div is " << (int)div << endl;
     return 0;
 }
